@@ -25,7 +25,7 @@ jobs:
 
   Deploy-Job:
     runs-on: ubuntu-latest
-    needs: build
+    needs: Build-Job
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
